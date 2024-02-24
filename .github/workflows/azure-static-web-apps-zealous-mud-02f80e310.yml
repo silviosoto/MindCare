@@ -1,5 +1,6 @@
 name: Azure Static Web Apps CI/CD
-ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND noninteractive
+ENV DEBCONF_NOWARNINGS="yes"
 
 on:
   push:
