@@ -1,6 +1,6 @@
 name: Azure Static Web Apps CI/CD
 DEBIAN_FRONTEND: noninteractive
-DEBCONF_NOWARNINGS="yes"
+
 
 on:
   push:
