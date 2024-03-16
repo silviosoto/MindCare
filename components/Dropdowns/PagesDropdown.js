@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { createPopper } from "@popperjs/core";
+import { useRouter } from 'next/router'
 
 const PagesDropdown = () => {
   // dropdown props
@@ -18,13 +19,15 @@ const PagesDropdown = () => {
   };
   return (
     <>
+    
       <a
         className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-        href="/auth/register"
+       
+        Click={() => router.push('/auth/register')}
       >
         Trabaja con nosotros
       </a>
-      <a
+      {/* <a
         className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
         href="#pablo"
         ref={btnDropdownRef}
@@ -145,7 +148,7 @@ const PagesDropdown = () => {
             Profile
           </a>
         </Link>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { createPopper } from "@popperjs/core";
-
+import { useRouter } from 'next/router'
 const IndexDropdown = () => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -29,7 +29,7 @@ const IndexDropdown = () => {
       >
         Trabaja con nosotros
       </a>
-      <div
+      {/* <div
         ref={popoverDropdownRef}
         className={
           (dropdownPopoverShow ? "block " : "hidden ") +
@@ -139,7 +139,7 @@ const IndexDropdown = () => {
             Profile
           </a>
         </Link>
-      </div>
+      </div> */}
     </>
   );
 };

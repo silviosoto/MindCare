@@ -69,12 +69,12 @@ export default function Footer() {
                       </a>
                     </li>
                     <li>
-                      <a
+                      {/* <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/bootstrap-themes/free?ref=nnjs-footer"
                       >
                         Contactanos
-                      </a>
+                      </a> */}
                     </li>
                   </ul>
                 </div>

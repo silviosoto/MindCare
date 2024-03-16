@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
-
+import { useRouter } from 'next/router'
 export default function Landing() {
   return (
     <>
@@ -154,7 +154,7 @@ export default function Landing() {
                 <Link href="/auth/register">
                 <button                   
                       className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                      
+                      Click={() => router.push('/auth/register')}
                 >
                   Trabaja con nosotros
                 </button>
